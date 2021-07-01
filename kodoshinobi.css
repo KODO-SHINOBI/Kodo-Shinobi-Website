@@ -64,7 +64,7 @@ li a:hover{
 /* CSS for Social Media Links */
 .social-media-link-container{
     position: fixed;
-    top: 200px;
+    top: 80px;
     left: 0;
     height: 210px;
     width: 6%;
@@ -141,7 +141,7 @@ li a:hover{
 .about-developers{
     position: relative;
     width: 25%;
-    height: 80%;
+    height: 70%;
     background: rgba(175, 243, 133, 0.712);
     display: flex;
     flex-direction: column;
