@@ -53,10 +53,11 @@ body{
 .landing-page-container{
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 645px;
     background: url("landingPage1.jpg") rgba(166, 230, 126, 0.712);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0.8s;
     overflow: hidden;
 }
 .jumping-text-container{
@@ -534,7 +535,8 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(144, 153, 136);
+        background: transparent;
+        border: 1px solid rgb(19, 17, 17);
         border-radius: 5px;
     }
     .hamburger-menu .hamburger-icon-container .hamburger-icon-content .hamburger-content0{
@@ -568,7 +570,7 @@ span{
         align-items: center;
     }
     .hamburger-menu .hamburger-real-content ul li{
-        width: 175px;
+        width: 185px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -607,6 +609,7 @@ span{
         background: url("landingPage1.jpg") rgba(166, 230, 126, 0.712);
         background-size: cover;
         background-repeat: no-repeat;
+        transition: 0.8s;
         overflow: hidden;
     }
     .jumping-text-container{
@@ -740,7 +743,7 @@ span{
     /* CSS for Social Media Links */
     .social-media-link-container{
         position: fixed;
-        top: 340px;
+        top: 200px;
         left: 0;
         height: 225px;
         width: 16%;
@@ -960,7 +963,7 @@ span{
         text-decoration: none;
         text-align: center;
         font-family: 'Rubik',sans-serif;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
         color: rgb(65, 53, 53);
     }
@@ -988,7 +991,7 @@ span{
         text-decoration: none;
         text-align: center;
         font-family: 'Rubik',sans-serif;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
         color: rgb(65, 53, 53);
     }
@@ -1090,6 +1093,7 @@ span{
         background: url("landingPage1.jpg") rgba(166, 230, 126, 0.712);
         background-size: cover;
         background-repeat: no-repeat;
+        transition: 0.8s;
         overflow: hidden;
     }
     .jumping-text-container{
@@ -1221,10 +1225,10 @@ span{
     /* CSS for Social Media Links */
     .social-media-link-container{
         position: fixed;
-        top: 461px;
+        top: 200px;
         left: 0;
         height: 230px;
-        width: 10%;
+        width: 11.5%;
         margin-left: 5px;
         background: rgba(181, 253, 136, 0.712);
         border-radius: 5px;
@@ -1441,7 +1445,7 @@ span{
         text-decoration: none;
         text-align: center;
         font-family: 'Rubik',sans-serif;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
         color: rgb(65, 53, 53);
     }
@@ -1470,7 +1474,7 @@ span{
         text-decoration: none;
         text-align: center;
         font-family: 'Rubik',sans-serif;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
         color: rgb(65, 53, 53);
     }
