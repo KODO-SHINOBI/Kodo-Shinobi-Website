@@ -4,7 +4,7 @@
   }
   body {
     height: 2000px;
-    background: linear-gradient(-45deg, #e5ff00, #790079, #c40000, #07056e,#0bcdfd);
+    background: linear-gradient(-45deg, #e5ff00, #006426, #3e00a1, #c40000,#0bcdfd);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
@@ -68,7 +68,7 @@
   .link-to-other-page{
       height: 200px;
       width: 100%;
-      background: rgb(199, 238, 60);
+      background: url(https://images.unsplash.com/photo-1531351770854-0cf9651fa8b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80)center center / cover no-repeat;
       margin-top: 10px;
       display: flex;
       flex-direction: row;
@@ -341,7 +341,10 @@
     text-align: center;
 }
 
-
+ #blogsection img{
+     max-width: 100%;
+     height: auto;
+ }
   #content {
       text-align: center;
   }
@@ -350,7 +353,7 @@
     width: 180px;
     border: none;
     top: 40%;
-    left: 40%;
+    left: 20%;
     margin: 0px;
     line-height: 34px;
     position: relative;
@@ -362,7 +365,7 @@
     background-color: #ffffff;
   }
   .arrow.arrow:after, .arrow.arrow:before {
-    border-width: 17px 0 17px 17px;
+    border-width: 16.5px 0 17px 17px;
     transition: all 0.2s;
   }
   .arrow.arrow:before {
@@ -393,6 +396,27 @@
     border-style: solid;
     border-width: 0;
   }
+
+ 
+/*CSS for projects part*/  
+#projects{
+    margin: 10px 5px 5px 0;
+    background: url(https://images.unsplash.com/photo-1522781063645-d5e4fb3e19aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)center center / cover no-repeat;
+    padding-bottom: 30px;
+}
+
+#projects h4{
+   color: rgb(0, 0, 0);
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-family: Raleway;
+   font-weight: bolder;
+   font-size: 2.8rem;
+   text-align: center;
+}
+
+
 
 /*CSS for map*/
 .map{
