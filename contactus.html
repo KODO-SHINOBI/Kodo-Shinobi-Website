@@ -3,51 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'>
   <link rel="stylesheet" href="contactus.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css'>
 </head>
 <body>
+	<nav class="navbar sticky-top navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand brand" href="index.html">Kodo Shinobi</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	   <i class="fas fa-bars"></i>
+	  </button>
+	
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto w-100 justify-content-end">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="AboutUS.html">About</a>
+				<li class="nav-item">
+				  <a class="nav-link" href="contactus.html">Contact</a>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Blog</a>
+					</li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
 
-<div class="container">
-	<div class="row">
-		<h1>Contact us</h1>
-	</div>
-	<div class="row">
-			<h4 style="text-align:center">We'd love to hear from you!</h4>
-	</div>
-	<div class="row input-container">
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<input type="text" required />
-					<label>Name</label> 
+    <section id="circ" class="container">
+		<br>
+		<h1 class="animated fadeIn">Follow us</h1>
+		<ul>
+		  <a href="https://www.facebook.com/kodo.shinobi58/">
+			<li class="animated zoomIn delayone">
+				<div class="back"></div>
+				<div class="icon">
+				  <i class="fa fa-facebook"></i>
 				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input type="text" required />
-					<label>Email</label> 
+			  </li>
+		  </a>
+		  <a href="https://twitter.com/KodoShinobi">
+			<li class="animated zoomIn delaytwo">
+				<div class="back"></div>
+				<div class="icon">
+				  <i class="fa fa-twitter"></i>
 				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
-					<input type="text" required />
-					<label>Phone Number</label> 
+			  </li>
+		  </a>
+		  <a href="https://www.linkedin.com/company/kodo-shinobi/">
+			<li class="animated zoomIn delaythree">
+				<div class="back"></div>
+				<div class="icon">
+				  <i class="fa fa-linkedin"></i>
 				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<textarea required></textarea>
-					<label>Message</label>
+			  </li>
+		  </a>
+		  <a href="https://www.instagram.com/kodoshinobi/">
+			<li class="animated zoomIn delayfour">
+				<div class="back"></div>
+				<div class="icon">
+				  <i class="fa fa-instagram"></i>
 				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="btn-lrg submit-btn">Send Message</div>
-			</div>
-	</div>
-</div>
+			  </li>
+		  </a>
+		</ul>
+	</section>
 
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+    <br>
+
+	<section class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+			  <h2 class="form-title">Get in Touch</h2>
+			</div>
+		</div>
+  
+		<div class="row">
+  
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+				<form id="contact-form" name="myForm" class="form" action="contact.php" onsubmit="return validateForm()" method="post" role="form">
+  
+					<div class="form-group">
+						<label class="form-label" id="nameLabel" for="name"></label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1">
+					</div>
+  
+					<div class="form-group">
+						<label class="form-label" id="emailLabel" for="email"></label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+					</div>
+  
+					<div class="form-group">
+						<label class="form-label" id="subjectLabel" for="sublect"></label>
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+					</div>
+  
+					<div class="form-group">
+						<label class="form-label" id="messageLabel" for="message"></label>
+						<textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your message" tabindex="4"></textarea>                                 
+					</div>
+  
+					<div class="text-center margin-top-25">
+						<input type="submit" name="submit" class="btn btn-mod btn-border btn-large"></input>
+					</div>
+  
+				</form>
+			  
+			</div>
+  
+		</div>
+		
+	</section>
+	  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script  src="contactus.js"></script>
 
 </body>
 </html>

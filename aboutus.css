@@ -30,7 +30,7 @@
   
   .navbar {
     height: 80px;
-    background-color: transparent;
+    background-color: rgb(24, 23, 23);
     border: none;
     color: white;
     z-index: 100;
@@ -38,28 +38,35 @@
   }
   
   .navbar-default .navbar-brand {
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
+    font-family: Londrina Outline;
+    text-transform: uppercase;
+    font-size: 3.2em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: Londrina Outline;
   }
   .navbar-default .navbar-brand:hover {
-    color: #C57ED3;
-    border: 1px solid #C57ED3;
+    color: #ffffff;
+    border: 1px solid #ffffff;
   }
   .navbar-default .navbar-nav > li > a {
-    color: rgb(211, 22, 22);
-    margin: 10px 5px 5px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin: 15px 5px 5px 5px;
   }
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-    color: #C57ED3;
-    border: 1px solid #C57ED3;
+    color: #ffffff;
+    border: 1px solid #f13f3f;
   }
   .navbar-default .navbar-nav > li > a:visited {
-    color: #C57ED3;
+    color: #ffffff;
     text-decoration: none;
   }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
-    color: #C57ED3;
+    color: #ffffff;
   }
   .navbar-default .navbar-toggle {
     border-color: #C57ED3;
@@ -68,7 +75,7 @@
     background-color: #ffffff;
   }
   .navbar-default .navbar-toggle .icon-bar {
-    color: #C57ED3;
+    color: #ffffff;
     background-color: #C57ED3;
   }
   .navbar-default .navbar-collapse.collapse.in ul {
@@ -82,19 +89,18 @@
     box-shadow: 0 0 4px grey;
   }
   .navbar.solid .navbar-brand {
-    color: #C57ED3;
+    color: #ffffff;
     transition: color 1s ease 0s;
   }
   .navbar.solid .navbar-nav > li > a {
-    color: #C57ED3;
+    color: #ffffff;
     transition: color 1s ease 0s;
   }
   
-  @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
 
   /* Custom css */
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
   }
   

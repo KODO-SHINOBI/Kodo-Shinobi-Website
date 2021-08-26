@@ -1,153 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kodoshinobi.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <title>KODO SHINOBI</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="kodoshinobi.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <!-- For the Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="icon.jpg" alt="">
+
+<nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">Kodo Shinobi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUS.html">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<section class="container-fluid id="slides">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="hamburger-menu" id="hamburger-el">
-            <div class="hamburger-icon-container">
-                <div class="hamburger-icon-content" id="hamburger-icon-content-el">
-                    <div class="hamburger-content0 content1"></div>
-                    <div class="hamburger-content0 content2"></div>
-                    <div class="hamburger-content0 content3"></div>
-                </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active data-bs-interval="2000"">
+            <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="coding">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Vision</h5>
+                <p>Start small 🤏 create BIG 😍</p>
+              </div>
+          </div>
+          <div class="carousel-item data-bs-interval="5000"">
+            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="img-fluid" alt="office">
+            <div class="carousel-caption d-none d-md-block ">
+                <h5 class="text-dark">Productivity</h5>
+                <p class="text-dark">Focus on being productive instead of busy.</p>
             </div>
-            <div class="hamburger-real-content" id="hamburger-content-el">
-                <ul class="navbar-container">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="AboutUS.html">About Us</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
+          </div>
+          <div class="carousel-item data-bs-interval="5000"">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="work">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Purpose</h5>
+                <p>We have a “strategic” plan its called doing things.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section class="container-fluid" id="navigation">
+    <div class="link-to-other-page">
+        <div class="link-to-contact-us-page">
+            <div class="link-to-contact-us-page-hover-effect1">
+                <a href="contactus.html">INTERACT WITH US
+                    <img src="messageUs.png" alt="Message Icon" class="message-icon1">
+                </a>
+
+            </div>
+            <div class="link-to-contact-us-page-hover-effect2">
+                <a href="contactus.html">GET IN TOUCH
+                    <img src="messageUs1.png" alt="Message Icon" class="message-icon1">
+                </a>
             </div>
         </div>
-    </nav>
-    <!-- For Landing Page -->
-    <div class="landing-page-container" id="landing-page-el">
-        <div class="social-media-link-container">
-            <a href="#" class="social-media-links">
-                <div class="social-media-icons">
-                    <img src="facebook2.png" alt="Fb Icon" class="social-media-icon-facebook">
-                </div>
-            </a>
-            <a href="#" class="social-media-links">
-                <div class="social-media-icons">
-                    <img src="instagram2.png" alt="twitter Icon" class="social-media-icon-twitter"/>
-                </div>
-            </a>
-            <a href="#" class="social-media-links">
-                <div class="social-media-icons">
-                    <img src="youtube2.png" alt="YT Icon" class="social-media-icon-youTube">
-                </div>
-            </a>
+        <div class="link-to-location-page">
+            <div class="link-to-location-page-hover-effect1">
+                <a href="#mapsection">OUR WORKPLACE
+                    <img src="location.png" alt="Location Icon" class="location-icon1">
+                </a>
+            </div>
+            <div class="link-to-location-page-hover-effect2">
+                <a href="#mapsection">EXPLORE IT
+                    <img src="location2.png" alt="Location Icon" class="location-icon1">
+                </a>
+            </div>
         </div>
-        <div class="button">
-            <span class="btn" id="up-btn"></span>
-            <span class="btn" id="down-btn"></span>
-        </div>
-        <div class="jumping-text-container">
-            <span class="jumping-text txt1">W</span>
-            <span class="jumping-text txt2">E</span>
-            <span class="jumping-text txt3">A</span>
-            <span class="jumping-text txt4">R</span>
-            <span class="jumping-text txt5">E</span>
-        </div>
-        <div class="ks-container">
-            <p>Kodo Shinobi</p>
+        <div class="link-to-our-achievement-page">
+            <div class="link-to-our-achievement-page-hover-effect1">
+                <a href="#projects">OUR ACHIEVEMENT
+                    <img src="achievement.png" alt="Achievement Icon" class="location-icon1">
+                </a>
+            </div>
+            <div class="link-to-our-achievement-page-hover-effect2">
+                <a href="#projects">LOOK AT THEM
+                    <img src="achievement1.png" alt="Location Icon" class="location-icon1">
+                </a>
+            </div>
         </div>
     </div>
-   <!-- Section for Developers About us -->
-    <div class="about-us-container">
-        <div class="about-us-container-top-box"><p>Know Us</p></div>
-        <div class="about-zaid about-developers">
-            <div class="about-zaid-image">
-                <img src="images.jpeg" alt="Mr. Zaid" class="about-zaid-image">
-                <p class="person-name name-zaid">Mr. Zaid</p>
-            </div>
-            <div class="person-content zaid-content">
-                <h2>Founder,Developer</h2>
-                <h3>(CEO)</h3>
-            </div>
+</section>
+
+<section class="container-fluid" id="blogsection">
+  <a style="text-decoration: none;" href="blog.html">
+    <h4>Blogs</h4>
+  </a>
+  <div class="row align-items-center ">
+    <div class="col">
+      <div class="card p-4 border bg-primary">
+        <img src="../img/first.jpeg" alt="First step">
+        <div class="card-body">
+          <h5 class="card-title">First step</h5>
+          <p class="card-text">It's always better to take your step. Our journey with first step begins with "Toycathon".....</p>
+          <a href="blog.html" class="btn btn-warning">Go Read</a>
         </div>
-        <div class="about-abhay about-developers">
-            <div class="about-abhay-image">
-                <img src="coding3.jpg" alt="Mr. Abhay" class="about-zaid-image">
-               <p class="person-name name-abhay">Mr. Abhay</p>
-            </div>
-            <div class="person-content abhay-content">
-                <h2>Founder,Frontend Dev.</h2>
-                <h3>(CEO)</h3>
-           </div>
-        </div>
-        <div class="about-abir about-developers">
-            <div class="about-abir-image">
-                <img src="coding2.jpg" alt="Mr. Abir" class="about-zaid-image">
-                <p class="person-name name-abir">Mr. Abir</p>
-            </div>
-            <div class="person-content abir-content">
-                <h2>Founder,Data Analyst</h2>
-                <h3>(CEO)</h3>
-           </div>
-        </div>
+      </div>
     </div>
 
-   <!-- Section For Link To Other Page -->
-    <section>
-        <div class="link-to-other-page">
-            <div class="link-to-contact-us-page">
-                <div class="link-to-contact-us-page-hover-effect1">
-                    <a href="contactus.html">INTERACT WITH US
-                        <img src="messageUs.png" alt="Message Icon" class="message-icon1">
-                    </a>
 
-                </div>
-                <div class="link-to-contact-us-page-hover-effect2">
-                    <a href="contactus.html">GET IN TOUCH
-                        <img src="messageUs1.png" alt="Message Icon" class="message-icon1">
-                    </a>
-                </div>
-            </div>
-            <div class="link-to-location-page">
-                <div class="link-to-location-page-hover-effect1">
-                    <a href="location.html">OUR WORKPLACE
-                        <img src="location.png" alt="Location Icon" class="location-icon1">
-                    </a>
-                </div>
-                <div class="link-to-location-page-hover-effect2">
-                    <a href="location.html">EXPLORE IT
-                        <img src="location2.png" alt="Location Icon" class="location-icon1">
-                    </a>
-                </div>
-            </div>
-            <div class="link-to-our-achievement-page">
-                <div class="link-to-our-achievement-page-hover-effect1">
-                    <a href="achievement.html">OUR ACHIEVEMENT
-                        <img src="achievement.png" alt="Achievement Icon" class="location-icon1">
-                    </a>
-                </div>
-                <div class="link-to-our-achievement-page-hover-effect2">
-                    <a href="achievement.html">LOOK AT THEM
-                        <img src="achievement1.png" alt="Location Icon" class="location-icon1">
-                    </a>
-                </div>
-            </div>
+    <div class="col">
+      <div class="card p-4 border bg-warning" >
+        <img src="../img/consistency.jpeg" class="card-img-top" alt="Consistency">
+        <div class="card-body">
+          <h5 class="card-title">Consistency is the key</h5>
+          <p class="card-text">Yes! We all are familiar  with the aforesaid phrase. And therefore we have continued to learn....</p>
+          <a href="blog.html" class="btn btn-primary">Go Read</a>
         </div>
-    </section>
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer">
-            <p class="Copyrights-text">All rights are reserved to Kodo Shinobi<sup>&copy;</sup> Group</p>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div id="content">
+        <a style="text-decoration: none;" href="blog.html">
+          <div class="arrow">More</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="container-fluid" id="projects">
+  <h4>Projects & Tutors</h4>
+  <div class="container overflow-hidden">
+    <div class="row g-5">
+      <div class="col-sm-6 d-inline-flex">
+        <div class="p-3 ">
+
         </div>
-    </footer>
-    <script src="kodoshinobi.js"></script>
+      </div>
+      <div class="col-sm-6 d-inline-flex">
+        <div class="p-3 embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Pls9xmpWNxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-6 d-inline-flex">
+        <div class="p-3 embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rCguzJMmBwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-6 d-inline-flex">
+        <div class="p-3 embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ko7MQiKOPyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" id="mapsection">
+  <div class="map">
+    <br>
+    <h3>Our Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14709.915700841211!2d88.6390536!3d22.8217641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1112c5b133f79bf!2sTechno%20Engineering%20College%20Banipur!5e0!3m2!1sen!2sin!4v1629884308614!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  
+</section>
+
+  <script src="kodoshinobi.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
+
