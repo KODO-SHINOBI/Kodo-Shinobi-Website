@@ -1,0 +1,89 @@
+body {
+  height: 2000px;
+  background: linear-gradient(-45deg, #e5ff00, #ff0000, #000000, #ffffff,#0b1bfd);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 25%;
+  }
+  25% {
+    background-position: 25% 50%;
+}
+  50% {
+      background-position: 100% 75%;
+  }
+  75% {
+    background-position: 75% 50%;
+}
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.navbar{
+    background-color: rgb(24, 23, 23);
+  }
+  .navbar .brand {
+      line-height: 70px;
+      text-transform: uppercase;
+      font-size: 3.2em;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      font-family: Londrina Outline;
+    }
+  
+  .navbar .nav-item {
+    padding: 10px 20px;
+  }
+  .navbar .nav-link {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+  }
+  .fa-bars {
+    color: #ffffff;
+    font-size: 40px;
+  }
+
+
+
+  /*CSS for blog cards*/
+  
+  .img-fluid {
+    width: 100% \9 ;
+  }
+  
+  .card-grid .card-wrapper {
+    width: 33%;
+  }
+  @media screen and (max-width: 991px) {
+    .card-grid .card-wrapper {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .card-grid .card-wrapper {
+      width: 100%;
+    }
+  }
+  .card-grid .card-wrapper .card {
+    display: block !important;
+    height: 100%;
+  }
+  .card-grid .card-body {
+    position: relative;
+  }
+  
+  .new-badge {
+    background-color: #df8;
+    margin-right: -0.25rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0.25rem;
+  }
+  .card-img-top + .card-body > .new-badge {
+    top: -3.5rem;
+  }
