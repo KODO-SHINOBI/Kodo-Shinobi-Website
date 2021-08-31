@@ -1,5 +1,5 @@
 body {
-  height: 2000px;
+  height: 100%;
   background: linear-gradient(-45deg, #e5ff00, #ff0000, #000000, #ffffff,#0b1bfd);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -92,7 +92,7 @@ body {
 .footer {
   background: black;
 	width: 100%;
-	margin: 1rem auto;
+	margin: 0;
 	overflow: auto;
 }
 .footer h1{
