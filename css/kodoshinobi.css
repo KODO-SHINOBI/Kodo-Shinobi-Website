@@ -53,6 +53,79 @@
     font-size: 40px;
   }
 
+
+  /*CSS for sidebar social media icons*/
+  .share-btn-container {
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+  }
+  
+  .share-btn-container a i {
+    font-size: 32px;
+  }
+  
+  .share-btn-container a {
+    margin: 12px 0;
+    transition: 500ms;
+  }
+  
+  .share-btn-container a:hover {
+    transform: scale(1.2);
+  }
+  
+  .share-btn-container .fa-facebook {
+    color: #3b5998;
+  }
+  
+  .share-btn-container .fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .share-btn-container .fa-linkedin {
+    color: #0077b5;
+  }
+  
+  .share-btn-container .fa-instagram {
+    color: #bd081c;
+  }
+
+  
+  /* Media Queries */
+  
+  @media (max-width: 550px) {
+    .content {
+      padding: 8px 32px;
+    }
+  
+    .share-btn-container {
+      transform: unset;
+      top: unset;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      flex-direction: row;
+      box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+      padding: 16px 0;
+      justify-content: center;
+    }
+  
+    .share-btn-container a {
+      margin: 0 32px;
+    }
+  }
+
+
+
+
+
+
   /*CSS for carousel*/
   section{
       position: relative;
@@ -436,4 +509,46 @@
     margin: 0 auto;
     width: 80%;
     height: 400px;
+}
+
+
+/* CSS for footer */
+.footer {
+  background: black;
+	width: 100%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+.footer h1{
+  font-family: Raleway;
+ font-size: 20px;
+ text-align: center;
+ padding-bottom: 20px;
+}
+
+.footer,
+.footer a {
+	color: rgb(255, 255, 255);
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-gap: 2rem;
+}
+.footer .footer-cols p{
+  text-transform: uppercase;
+  font-size: 4.2em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: Londrina Outline;
+  text-align: center;
+}
+.footer li {
+	line-height: 1.9;
 }
